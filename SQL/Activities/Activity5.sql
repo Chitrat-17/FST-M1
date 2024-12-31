@@ -1,13 +1,13 @@
 -- ACTIVITY 5
-UPDATE salesmen 
+UPDATE salesman 
 SET grade = 200
 WHERE salesman_city = 'Rome';
 
-UPDATE salesmen 
+UPDATE salesman 
 SET grade = 300
 WHERE salesman_name = 'James Hoog';
 
-UPDATE salesmen 
+UPDATE salesman 
 SET salesman_name = 'Pierre'
 WHERE salesman_name = 'McLyon';
 
