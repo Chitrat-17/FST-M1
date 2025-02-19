@@ -20,7 +20,7 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 public class Activity1 {
 AppiumDriver driver;
 
-@BeforeTest
+@BeforeClass
 public void setup() throws MalformedURLException, URISyntaxException {
 	// Desired Capabilities
 	UiAutomator2Options options = new UiAutomator2Options();
@@ -42,7 +42,7 @@ public void setup() throws MalformedURLException, URISyntaxException {
 		driver.findElement(AppiumBy.id("digit_9")).click();
 		driver.findElement(AppiumBy.accessibilityId("equals")).click();
 		
-		String result = driver.findElement(AppiumBy.id("result")).getText();
+		String result = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.android.calculator2:id/result\"]")).getText();
 		assertEquals(result, "54");
 	}
 	
