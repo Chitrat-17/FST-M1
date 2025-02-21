@@ -16,6 +16,6 @@ import io.cucumber.junit.platform.engine.Constants;
     key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "@TasksDataTable"
 )
 
-public class TestRunner {
+public class Runner_DataTable {
 	
 }
